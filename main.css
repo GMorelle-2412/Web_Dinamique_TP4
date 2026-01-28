@@ -1,0 +1,17 @@
+.dive0{
+    float: left;
+    color: aliceblue;
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    margin-left: 10px;
+}
+
+.dive1{
+    float: left;
+    color: aliceblue;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin-left: 10px;
+}
