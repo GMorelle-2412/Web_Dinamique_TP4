@@ -39,6 +39,14 @@ function UneProcedureQuiSurvole(evenement) {
     compteur2++;
     evenement.target.innerHTML = "on m'a survollé : " + compteur2 + " fois";
 
+    /*if (conteurchange == 0) {
+        evenement.target.style.display = "hidden";
+        conteurchange_2 = 1;
+    } else {
+        evenement.classList.remove("hidden");
+        conteurchange_2 = 0;
+    }
+*/
 }
 
 function UneProcedureQuiEcrit(evenement) {
