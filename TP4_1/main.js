@@ -1,7 +1,7 @@
 /*Question 10:
 1) Reproduire le code de l'exemple précédent (V)
 2) Au clic de souris, changer la class css de la div (attribute 
-className)
+className) (v)
 3) Au survole de souris (trouver l'évènement dans la doc MDN), 
 changer la visibilité de la div (trouver l'attribut avec le debugger)
 */
@@ -11,14 +11,14 @@ var compteur2 = 0;
 var conteurchange = 0;
 var conteurchange_2 = 0;
 
-var Madiv = document.getElementById("Methode2");
-Madiv.addEventListener("click", UneProcedureQuiChangeLetext);
+var Madiv1 = document.getElementById("Methode2");
+Madiv1.addEventListener("click", UneProcedureQuiChangeLetext);
 
-var Madiv = document.getElementById("Methode3");
-Madiv.addEventListener("mouseover", UneProcedureQuiSurvole);
+var Madiv2 = document.getElementById("Methode3");
+Madiv2.addEventListener("mouseover", UneProcedureQuiSurvole);
 
-var Madiv = document.getElementById("Methode4");
-Madiv.addEventListener("keydown", UneProcedureQuiEcrit);
+var Madiv3 = document.getElementById("Methode4");
+Madiv3.addEventListener("keydown", UneProcedureQuiEcrit);
 
 function UneProcedureQuiChangeLetext(evenement) {
 
@@ -38,15 +38,16 @@ function UneProcedureQuiChangeLetext(evenement) {
 function UneProcedureQuiSurvole(evenement) {
     compteur2++;
     evenement.target.innerHTML = "on m'a survollé : " + compteur2 + " fois";
+    
 
-    /*if (conteurchange == 0) {
-        evenement.target.style.display = "hidden";
+    if (conteurchange_2 == 0) {
+        evenement.target.className = "dive_inv";
+        evenement.target.innerHTML = "";
         conteurchange_2 = 1;
     } else {
-        evenement.classList.remove("hidden");
+        evenement.target.className = "dive0";
         conteurchange_2 = 0;
     }
-*/
 }
 
 function UneProcedureQuiEcrit(evenement) {
